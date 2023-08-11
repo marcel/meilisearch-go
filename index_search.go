@@ -124,6 +124,9 @@ func searchPostRequestParams(query string, request *SearchRequest) map[string]in
 	if len(request.Facets) != 0 {
 		params["facets"] = request.Facets
 	}
+	if request.ShowRankingScore {
+		params["showRankingScore"] = request.ShowRankingScore
+	}
 	if len(request.Sort) != 0 {
 		params["sort"] = request.Sort
 	}

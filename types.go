@@ -311,6 +311,7 @@ type SearchRequest struct {
 	ShowMatchesPosition   bool
 	Facets                []string
 	PlaceholderSearch     bool
+	ShowRankingScore      bool
 	Sort                  []string
 	HitsPerPage           int64
 	Page                  int64
